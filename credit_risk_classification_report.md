@@ -10,4 +10,14 @@ For this analysis, a logisitic regression machine learning model was used to det
 
 ## Results
 
+Following logistic regression model creation, training, and testing the results were as follows:
+
+Of 19,384 lending records, 18,663 were labeled as true positive results, 102 were labeled as false positives, 563 were labeled as true negatives, and 56 were labeled as false negatives.
+
+Resulting classification report scores for the logistic regression model for healthy loans were a precision score of 100% and a recall of 99%. For high-risk loans there was a precision score of 85% and a recall of 91%. Overall accuracy of the model was noted as 99%.
+
 ## Summary
+
+The overall accuracy rate of 99% of the linear regression model would suggest a properly working model. However, this accuracy rate likely applies moreso to classification of healthy loans compared to high-risk loans due to the larger amount of healthy loans present in the dataset. When looking at individual class precision and recall rates, this can be confirmed as both precision and recall for healthy loans are at or near 100%, while precision and recall lag behind for high-risk loan classification at 85% and 91% respectively. This would suggest that when classifying high-risk loans, that false positives are more prevalent and false negatives are slightly less prevalent than the false positives. 
+
+To conclude, although high-risk loans are identified with less accuracy in this model, the model would still perform well enough to be reccommended for use in classifying high vs. low risk credit loans at financial institutions. The model would drastically improve efficiency in determining loan risk and thus greatly improve financial gain based on interest revenues. The most important factor to look at would be rate of false negatives in this situation, as this would pertain to high-risk loans being misclassified as healthy or low-risk. These false negatives would serve as potentials for loan defaults and credit risk for financial institutions, while false positives identifying healthy loans as credit-risks would only be airing on the side of caution and wouldn't impose risk of financial loss. Recall rate of 91% on identification of false negative high-risk loans would still be sufficient to properly identify these possible defaulting loans and therefore be worth the efficiency, time saved, and profits made by utilizing this logisitic regression model.
